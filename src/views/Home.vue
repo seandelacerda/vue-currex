@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/shekel.png">
+  <div class="home wrapper">
+    <img alt="shekel logo" src="../assets/shekel.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <form @submit.prevent="increment(currentCurrency, Number(currentAmount))">
       <input v-model="currentCurrency" placeholder="currency">
@@ -20,7 +20,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+// import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
@@ -31,7 +31,7 @@ export default {
     }
   },
   components: {
-    HelloWorld
+    // HelloWorld
   },
   methods: {
     increment(currency, amount) {
@@ -45,5 +45,8 @@ export default {
   input {
     display: block;
     margin: 10px auto;
+  }
+  ul {
+    list-style-type: none;
   }
 </style>
