@@ -1,4 +1,4 @@
-# vue-practice
+# Vue.js currency exchange application
 
 ## Project setup
 ```
